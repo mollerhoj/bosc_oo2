@@ -1,6 +1,7 @@
 RUNNER = runner.c
 OBJS = list.o main.o 
-LIBS= -lpthread
+LIBS= -lpthread -lm
+OPT= -std=gnu99
 
 all:
-	gcc ${RUNNER}	${LIBS} 
+	clang ${RUNNER}	${LIBS} 
